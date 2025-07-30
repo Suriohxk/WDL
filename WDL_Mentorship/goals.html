@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Set Goals – MentorConnect</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #f9f9f9, #dbeafe);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .goal-container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1e3a8a;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px 15px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+      resize: none;
+    }
+
+    input[type="datetime-local"] {
+      padding: 10px 15px;
+    }
+
+    button {
+      margin-top: 30px;
+      width: 100%;
+      padding: 14px;
+      background-color: #2563eb;
+      color: white;
+      font-size: 1.1em;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #1e40af;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.95em;
+      color: #4b5563;
+    }
+
+    .back-link a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="goal-container">
+    <h2>Set Your Goals</h2>
+    <form>
+      <label for="short-goal">Short-Term Goal</label>
+      <textarea id="short-goal" rows="3" placeholder="E.g. Complete resume by next week..."></textarea>
+
+      <label for="long-goal">Long-Term Goal</label>
+      <textarea id="long-goal" rows="4" placeholder="E.g. Get a job in product management within 6 months..."></textarea>
+
+      <label for="session-time">Schedule Next Session</label>
+      <input type="datetime-local" id="session-time">
+
+      <button type="submit">Save Goals</button>
+    </form>
+    <div class="back-link">
+      <p><a href="dashboard.html">← Back to Dashboard</a></p>
+    </div>
+  </div>
+</body>
+</html>
