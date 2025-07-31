@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find a Match – MentorConnect</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="match-body">
+  <header class="match-header">
+    <h2>Find a Match</h2>
+  </header>
+
+  <div class="filter-bar">
+    <label for="domain-select">Filter by Domain:</label>
+    <select id="domain-select">
+      <option value="all">All</option>
+      <option value="career">Career</option>
+      <option value="entrepreneurship">Entrepreneurship</option>
+      <option value="fitness">Fitness</option>
+      <option value="life-skills">Life Skills</option>
+    </select>
+  </div>
+
+  <div class="match-grid">
+    <div class="match-card" data-domain="career">
+      <h3>Aditi Sharma</h3>
+      <p><strong>Domain:</strong> Career</p>
+      <p>Resume expert and interview coach with 5 years of mentoring experience.</p>
+      <button class="connect-btn">Connect</button>
+    </div>
+
+    <div class="match-card" data-domain="entrepreneurship">
+      <h3>Rahul Verma</h3>
+      <p><strong>Domain:</strong> Entrepreneurship</p>
+      <p>Founder of 2 startups, passionate about helping early-stage founders.</p>
+      <button class="connect-btn">Connect</button>
+    </div>
+
+    <div class="match-card" data-domain="fitness">
+      <h3>Megha Patel</h3>
+      <p><strong>Domain:</strong> Fitness</p>
+      <p>Certified fitness coach and nutritionist helping mentees build healthy routines.</p>
+      <button class="connect-btn">Connect</button>
+    </div>
+
+    <div class="match-card" data-domain="life-skills">
+      <h3>Karan Mehta</h3>
+      <p><strong>Domain:</strong> Life Skills</p>
+      <p>Specializes in time management, public speaking, and personal growth.</p>
+      <button class="connect-btn">Connect</button>
+    </div>
+
+    <div class="match-card" data-domain="career">
+      <h3>Nisha Bhat</h3>
+      <p><strong>Domain:</strong> Career</p>
+      <p>Helping college students choose the right industry path and internships.</p>
+      <button class="connect-btn">Connect</button>
+    </div>
+  </div>
+
+  <div class="match-back-link">
+    <p><a href="dashboard.html">← Back to Dashboard</a></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

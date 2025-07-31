@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MentorConnect – Welcome</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="index-body">
+
+<div class="auth-container">
+  <h1>MentorConnect</h1>
+
+  <div class="tab-buttons">
+    <button class="tab-btn active" onclick="showForm('login')">Login</button>
+    <button class="tab-btn" onclick="showForm('register')">Register</button>
+  </div>
+
+  <!-- Login Form -->
+  <div class="form-section active" id="login-form">
+    <form action="dashboard.html">
+      <label>Email</label>
+      <input type="email" required>
+      <label>Password</label>
+      <input type="password" required>
+      <button type="submit" class="submit-btn">Login</button>
+    </form>
+  </div>
+
+  <!-- Register Form -->
+  <div class="form-section" id="register-form">
+    <form action="dashboard.html">
+      <label>Full Name</label>
+      <input type="text" required>
+      <label>Email</label>
+      <input type="email" required>
+      <label>Password</label>
+      <input type="password" required>
+      <label>Role</label>
+      <select>
+        <option value="mentor">Mentor</option>
+        <option value="mentee">Mentee</option>
+      </select>
+      <button type="submit" class="submit-btn">Register</button>
+    </form>
+  </div>
+
+  <div class="footer">© 2025 MentorConnect</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
