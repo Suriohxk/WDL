@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register - MentorConnect</title>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  <script>
+    function redirectBasedOnRole(event) {
+      event.preventDefault(); // Prevent form from submitting normally
+      const role = document.getElementById("role").value;
+      if (role === "mentor") {
+        window.location.href = "mentor.html";
+      } else if (role === "mentee") {
+        window.location.href = "mentee.html";
+      } else if (role === "admin") {
+        window.location.href = "admin.html";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Register</h2>
+  <form onsubmit="redirectBasedOnRole(event)">
+    <label>Name:</label><br>
+    <input type="text" required><br><br>
+    <label>Email:</label><br>
+    <input type="email" required><br><br>
+    <label>Password:</label><br>
+    <input type="password" required><br><br>
+    <label>Select Role:</label><br>
+    <select id="role" required>
+      <option value="">--Select--</option>
+      <option value="mentor">Mentor</option>
+      <option value="mentee">Mentee</option>
+      <option value="admin">Admin</option>
+    </select><br><br>
+    <input type="submit" value="Register"><br><br>
+  </form>
+  <p><a href="home.html">Back to Home</a></p>
+  <script src="script.js"></script>
+</body>
+</html>
